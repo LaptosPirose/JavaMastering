@@ -75,11 +75,7 @@ public class Variables {
 		
 		/*
 		 * None of other simple math operations tested returned a valid sentence ( -, * , /)
-		 */
-		
-		
-		
-		
+		 */	
 	}
 
 }
