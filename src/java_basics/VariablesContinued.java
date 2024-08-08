@@ -7,7 +7,7 @@ public class VariablesContinued {
 		System.out.println("Still Learning about Java Variables!");
 		
 		/*
-		 * About variables.
+		 * About Primitive Data Types.
 		 * More info: https://glysns.gitbook.io/java-basico/sintaxe/variaveis
 		 */
 		
@@ -21,6 +21,34 @@ public class VariablesContinued {
 		 *	double 		8 bytes 	Stores fractional numbers. Sufficient for storing 15 decimal digits
 		 *	boolean 	1 bit 		Stores true or false values
 		 *	char 		2 bytes 	Stores a single character/letter or ASCII values
+		 */
+		
+		/*
+		 * Minimum and Maximum value for Java Variables
+		 * S.No.      Data Type      Size          Min. Value                Max. Value
+		 *	1           Byte           8             -128                       127
+		 *	2           Short         16             -32768                     32767
+		 *	3           Integer       32             -2147483648                2147483647
+		 *	4           Float         32              1.4E-45                   3.4028235E38
+		 *	5           Long          64             -9223372036854775808       9223372036854775807
+		 *	6           Double        64              4.9E-324                  1.7976931348623157E308
+		 *	7           Character     16
+		 */
+		
+		/* Wrapper Classes
+		 * 
+		 * Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
+		 *  The table below shows the primitive type and the equivalent wrapper class:
+		 * 
+		 *  Primitive Data Type 	Wrapper Class
+		 *	byte 	Byte
+		 *	short 	Short
+		 *	int 	Integer
+		 *	long 	Long
+		 *	float 	Float
+		 *	double 	Double
+		 *	boolean 	Boolean
+		 *	char 	Character
 		 */
 		
 		/*
@@ -93,24 +121,62 @@ public class VariablesContinued {
 		/*
 		 * DOUBLE type in Java is such a primitive data that represents floating number with double precision
 		 * of 64 bits. DOUBLE can storage number with 15 decimal digits precision, 
-		 * and values range is about ±4,9 x 10^-324 to ±1,8 x 10^308.
+		 * and values range is about 4.9E-324 to 1.7976931348623157E+308.
 		 */
 		
 		double greatDouble = 1000000000.99999999;
 		System.out.println(greatDouble);
-		System.out.println("Minimum number accpeted by a double number: ±4,9 x 10^-324");
-		System.out.println("Maximum number accpeted by a double number: ±1,8 x 10^308.");
+		System.out.println("Minimum number accpeted by a double number: 4.9E-324");
+		System.out.println("Maximum number accpeted by a double number: 1.7976931348623157E+308.");
 		
 		/*
 		 * Float type in Java is such a primitive data that represents floating number with precision
 		 * of 32 bits. FLOAT can storage number with 6 or 7 decimal digits precision, 
-		 * and values range is about -3.40292347E+38 a +3.40292347E+38.
+		 * and values range is about 1.40129846432481707E-45 to 3.40282346638528860E+38.
 		 */
 		
 		double greatFloat = 1000000000.999999;
 		System.out.println(greatFloat);
-		System.out.println("Minimum number accpeted by a double number: ±4,9 x 10^-324");
-		System.out.println("Maximum number accpeted by a double number: ±1,8 x 10^308.");
+		System.out.println("Minimum number accpeted by a float number: 1.40129846432481707E-45");
+		System.out.println("Maximum number accpeted by a float number: 3.40282346638528860E+38.");
+		
+		/* CHAR variable just get one character per once. Like 'a' or something else.
+		 * CHAR variable occupy 2 bytes of size.
+		 */
+		
+		char character = 'Q';
+		System.out.println(character);
+		System.out.println(Character.SIZE);
+		
+		/* 
+		 * Boolean is the most simple. Just storage True or False.
+		 */
+		
+		boolean falsy = false;
+		boolean truly = true;
+		
+		/* Using Wrapper Classes to get minimum and maximum values and also size of variables.
+		 * 
+		 */
+		
+		System.out.println("using wrapper classes to get some datas:");
+		System.out.println(String.format("The INTEGER variable size is %d.", Integer.SIZE));
+		System.out.println(String.format("The minimum value for INTEGER variable is %d.", Integer.MIN_VALUE));
+		System.out.println(String.format("The maximum value for INTEGER variable is %d.", Integer.MAX_VALUE));
+		
+		System.out.println(String.format("The FLOAT variable size is %d.", Float.SIZE));
+		System.out.println(String.format("The minimum value for FLOAT variable is %.20f.", Float.MIN_VALUE));
+		System.out.println(String.format("The maximum value for FLOAT variable is %.20f.", Float.MAX_VALUE));
+		
+		/* 
+		 * These methods can be used when you are using Wrapper Classes. And you can use Wrapper Classes to
+		 * create variables, but the variables are created as objects.
+		 */
+		
+		int number = 20;
+		Integer number_oneInteger = 200;
+		System.out.println(number_oneInteger);
+		System.out.println(number_oneInteger.bitCount(number));
 		
 	}
 
