@@ -38,17 +38,7 @@ public class LearningArrays {
 		 */
 		
 		words = new String[10];
-		System.out.println(words[0]); // The data was lost;
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
+		System.out.println(words[0]); // The data was lost;		
 	}
 
 }
