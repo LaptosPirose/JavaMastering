@@ -14,7 +14,7 @@ public class LearningMethods {
 		
 		System.out.println(exemplo.getNome());
 		System.out.println(exemplo.getAno());
-		System.out.println(exemplo.returnAll());
+		System.out.println(Exemplo.returnAll());
 		System.out.println(Exemplo.returnAll());
 	}
 }
