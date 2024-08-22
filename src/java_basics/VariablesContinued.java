@@ -193,6 +193,7 @@ public class VariablesContinued {
 		Integer number_oneInteger = 200;
 		System.out.println(number_oneInteger);
 		System.out.println(number_oneInteger.bitCount(number));
+		System.out.println(Integer.bitCount(number));
 
 	}
 

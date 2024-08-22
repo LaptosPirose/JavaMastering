@@ -9,7 +9,6 @@ public abstract class Animal {
         this.age = age;
         this.gender = gender;
         this.weigthInLbs = weigthInLbs;
-
     }
 
     public void eat() {
