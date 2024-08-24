@@ -68,41 +68,45 @@ public class NewApplication {
 		System.out.println(list3);
 
 		/*
-		 * Creating elements using lists, hash sets or whatever to populate 
+		 * Creating elements using lists, hash sets or whatever to populate
 		 */
 
 		HashSet<Integer> hashSet = new HashSet<Integer>(list3);
 		System.out.println(list3);
-		
+
 		/*
 		 * Now, there is with the same content of list3
 		 */
-		
+
 		/*
 		 * Sorting items on list
 		 */
-		
+
 		Collections.sort(list3);
 		System.out.println(list3);
-		
+
 		/*
 		 * Sorting objects
 		 */
-		
+
 		Employee employee1 = new Employee("John Travis", 3800, "Logistic");
 		Employee employee2 = new Employee("Mike Lugos", 4000, "Financial");
 		Employee employee3 = new Employee("Tom Brady", 3700, "Engineering");
-		
+
 		ArrayList<Employee> employeeList = new ArrayList<Employee>();
 		employeeList.add(employee1);
 		employeeList.add(employee2);
 		employeeList.add(employee3);
-		
-		
-		for(Employee employee : employeeList) {
+
+		// for (Employee employee : employeeList) {
+		// 	System.out.println(employee);
+		// }
+
+		Collections.sort(employeeList);
+
+		for (Employee employee : employeeList) {
 			System.out.println(employee);
 		}
-
 	}
 
 }

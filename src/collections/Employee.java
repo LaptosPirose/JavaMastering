@@ -1,6 +1,6 @@
 package collections;
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 	String name;
 	int salary;
 	String department;
@@ -72,6 +72,16 @@ public class Employee {
 		} else if (!department.equals(other.department))
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Employee o) {
+		if (this.salary > o.salary) {
+			return 1;
+		} else if (this.salary < o.salary) {
+			return -1;
+		}
+		return 0;
 	}
 
 }
