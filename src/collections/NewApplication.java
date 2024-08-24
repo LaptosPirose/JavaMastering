@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 
 public class NewApplication {
@@ -48,23 +49,59 @@ public class NewApplication {
 		System.out.println(list2.contains(10) ? "Yes, the value is inside de the list." : "No, the value is outside.");
 
 		ArrayList<Integer> list3 = new ArrayList<Integer>();
-		list3.add(10);
 		list3.add(43);
 		list3.add(54);
+		list3.add(10);
 		list3.add(120);
 
 		ArrayList<Integer> list4 = new ArrayList<Integer>();
-		list4.add(10);
-		list4.add(43);
 		list4.add(54);
+		list4.add(43);
+		list4.add(10);
 
 		list3.retainAll(list4);
 		/*
-		 * Remove all the elements in list 3 except the items contained in list4.
-		 * Retain all elements equals the elements that are contained in list4.
+		 * Remove all the elements in list 3 except the items contained in list4. Retain
+		 * all elements equals the elements that are contained in list4.
 		 */
 
 		System.out.println(list3);
+
+		/*
+		 * Creating elements using lists, hash sets or whatever to populate 
+		 */
+
+		HashSet<Integer> hashSet = new HashSet<Integer>(list3);
+		System.out.println(list3);
+		
+		/*
+		 * Now, there is with the same content of list3
+		 */
+		
+		/*
+		 * Sorting items on list
+		 */
+		
+		Collections.sort(list3);
+		System.out.println(list3);
+		
+		/*
+		 * Sorting objects
+		 */
+		
+		Employee employee1 = new Employee("John Travis", 3800, "Logistic");
+		Employee employee2 = new Employee("Mike Lugos", 4000, "Financial");
+		Employee employee3 = new Employee("Tom Brady", 3700, "Engineering");
+		
+		ArrayList<Employee> employeeList = new ArrayList<Employee>();
+		employeeList.add(employee1);
+		employeeList.add(employee2);
+		employeeList.add(employee3);
+		
+		
+		for(Employee employee : employeeList) {
+			System.out.println(employee);
+		}
 
 	}
 
