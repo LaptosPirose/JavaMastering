@@ -10,7 +10,5 @@ public class ForPractice {
 		for (int i = 0; i < stringTest.length(); i++) {
 			System.out.println("char " + i + " is : " + stringTest.charAt(i) + ".");
 		}
-		
-		
 	}
 }
