@@ -60,8 +60,12 @@ class MyUtils {
 	}
 
 	/**
+	 * Method name: add10
+	 * 
 	 * @param argumentA
 	 * @return
+	 * 
+	 *         Inside the method: return argument + 10;
 	 */
 	public int add10(int argumentA) {
 		return argumentA + 10;
