@@ -18,6 +18,9 @@ public class Arrays {
 
 		String[] stringArray = new String[] { "My", "name", "is" };
 		System.out.println(stringArray[0]);
+		
+		double[] doubleArray = new double[] {1.3, 3.6, 6.9 };
+		System.out.println(doubleArray[1]);
 
 	}
 
