@@ -1,47 +1,36 @@
 package zoo;
 
 public class Zoo {
-
 	public static void main(String[] args) {
-		// Animal animal = new Animal(10,"M", 20);
-		//
-		// animal.eat();
-		// animal.sleep();
+		Bird birdOne = new Bird(10, "M", 2);
+		birdOne.eat();
+		// birdOne.fly(); Doesn't exixts in Bird Type
 
-		Bird bird1 = new Bird(10, "F", 10);
-		Animal bird2 = new Bird(1, "F", 2);
+		Chicken chickenOne = new Chicken(1, "F", 2);
+		chickenOne.fly();
 
-		Chicken chicken1 = new Chicken(1, "m", 10);
-		chicken1.move();
+		Animal sparrowOne = new Sparrow(1, "F", 10);
+		sparrowOne.move();
+		// sparrowOne.fly(); Doesn't exists in Animal type
 
-		Sparrow sparrow1 = new Sparrow(2, "F", 5);
-		// sparrow1.fly();
-		// sparrow1.move();
+		Sparrow sparrowTwo = new Sparrow(2, "M", 5);
+		sparrowTwo.fly();
 
-		Fish fish1 = new Fish(2, "F", 3);
+		Fish fishOne = new Fish(3, "M", 4);
 
-		moveAnimal(bird1);
-		moveAnimal(sparrow1);
-		moveAnimal(bird2);
-		moveAnimal(fish1);
+		moveAnimal(sparrowTwo);
+		moveAnimal(chickenOne);
+		moveAnimal(fishOne);
 
-		/**
-		 * You can create instances for Interfaces because inside there is a method.
-		 */
+		Flyable chickenTwo = new Chicken(1, "F", 2);
+		chickenTwo.fly(); // There is only visibility to one method
 
-		Flyable flyingSparrow = new Sparrow(1, "F", 10);
-		flyingSparrow.fly();
-
-		/**
-		 * Flyable flyingBird = new Bird(2, "M", 10); This will not works because
-		 * Sparrow has the flyable method
-		 * implemented by Interface but Bird class doesn't.
-		 */
+		// Flyable sparrowThree = new Bird(2, "M", 2); Is not possible because Bird
+		// doesn't implement Flyable
 
 	}
 
 	public static void moveAnimal(Animal animal) {
 		animal.move();
 	}
-
 }

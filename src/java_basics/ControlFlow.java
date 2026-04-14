@@ -68,7 +68,5 @@ public class ControlFlow {
 		}
 		
 		System.out.println(String.format("The Array of char has %d elements.", arrayLength));
-		System.out.println(String.format("Git implementation test."));
-		
 	}
 }
