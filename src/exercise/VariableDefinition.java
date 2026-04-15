@@ -33,7 +33,7 @@ public class VariableDefinition {
         System.out.println("The value of myBoolean is: " + myBoolean);
 
         /*
-         * Defning a array variable
+         * Defining a array variable
          */
         int[] myArray = { 1, 2, 3, 4, 5 };
         System.out.println("The elements of myArray are: ");
