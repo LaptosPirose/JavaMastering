@@ -2,7 +2,7 @@ package arrays;
 
 public class Arrays {
     public static void main(String[] args) {
-        // Learing arrays
+        // Learning arrays
 
         int[] intArray = new int[100];
         int i = 0;
