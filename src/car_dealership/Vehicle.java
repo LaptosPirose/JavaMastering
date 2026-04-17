@@ -6,7 +6,7 @@ public class Vehicle {
 	private String make;
 	private String model;
 	private double price;
-	
+
 	/**
 	 * @param make
 	 * @param model
@@ -67,7 +67,7 @@ public class Vehicle {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(make, model, price);
+		return Objects.hash(make, model, Double.valueOf(price));
 	}
 
 	@Override
@@ -82,6 +82,5 @@ public class Vehicle {
 		return Objects.equals(make, other.make) && Objects.equals(model, other.model)
 				&& Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price);
 	}
-	
-	
+
 }
