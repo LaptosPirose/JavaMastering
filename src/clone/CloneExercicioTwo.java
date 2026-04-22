@@ -15,7 +15,7 @@ class PersonTwo implements Cloneable {
 	}
 
 	public void showsInfoTwo() {
-		System.out.println("The name is: "+ this.nameTwo +", and age is " + this.ageTwo+".");
+		System.out.println("The name is: " + this.nameTwo + ", and age is " + this.ageTwo + ".");
 	}
 }
 
@@ -27,13 +27,17 @@ public class CloneExercicioTwo {
 			PersonTwo anotherAliceTwo = (PersonTwo) aliceTwo.clone();
 			aliceTwo.showsInfoTwo();
 			anotherAliceTwo.showsInfoTwo();
+			System.out.println(8 / 0);
 
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
+		} catch (ArithmeticException f) {
+			System.out.println("Erro dividir por zero.");
+			// f.printStackTrace();
 		}
-		
+
 		String variavelStringOne = "Angelo";
-		int variavelIntTwo = 45;		
+		int variavelIntTwo = 45;
 		System.out.printf("The name is %s with %d.%n", variavelStringOne, variavelIntTwo);
 
 	}
