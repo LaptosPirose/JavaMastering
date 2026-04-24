@@ -21,6 +21,9 @@ public class ExecutingJar {
 		System.out.println("Depois rodar o comando abaixo:");
 		System.out.println("jar -cvfm myprogram.jar manifest.mf *.class");
 		System.out.println("Ao criar o arquivo manifest.mf, lembre-se de inserir uma quebra de linha, no final.");
+		System.out.println("Conteúdo do arquivo manifest.mf ");
+		System.out.println("Main-Class: aquivo");
+		System.out.println("Quebra de linha no final.");
 		
 	}
 }
