@@ -9,13 +9,14 @@ import java.io.IOException;
 public class Application {
 	public static void main(String[] args) {
 
-		BufferedReader bufferedReader = null;
 		File file = null;
+		FileReader fileReader = null;
+		BufferedReader bufferedReader = null;
 
 		try {
 
-			file = new File("myfilea.txt");
-			FileReader fileReader = new FileReader(file);
+			file = new File("myfile.txt");
+			fileReader = new FileReader(file);
 			bufferedReader = new BufferedReader(fileReader);
 			String line = bufferedReader.readLine();
 
@@ -32,7 +33,12 @@ public class Application {
 			System.out.println(e.getMessage() + "== File can't be read. ==" + file.getName());
 		} finally {
 			try {
-				bufferedReader.close();
+				if (fileReader != null) {
+					fileReader.close();
+				}
+				if (bufferedReader != null) {
+					bufferedReader.close();
+				}
 				System.out.println("I closed the buffer!");
 			} catch (IOException e) {
 				System.out.println(e.getMessage() + "== File can't be closed. ==" + file.getName());

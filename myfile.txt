@@ -1,4 +1,4 @@
-begining_of_file
+beginning_of_file
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta magna ac nisl interdum, sed egestas nunc varius. Aliquam sit amet neque luctus, rhoncus sem quis, commodo nisi. Aliquam eget interdum nisl, ut posuere felis. Mauris at tortor porta, dictum magna a, convallis nunc. Duis et placerat neque, eget congue sem. Donec dictum justo purus. Aliquam fermentum eleifend sagittis.
 
