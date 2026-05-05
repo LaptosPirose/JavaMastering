@@ -51,6 +51,14 @@ public class Collections {
 		ArrayList<Integer> intArray = new ArrayList<Integer>();
 		ArrayList<String> stringArray = new ArrayList<String>();
 
+		intArray.add(120);
+		intArray.add(125);
+
+		for (int num : intArray) {
+			System.out.println("num");
+			System.out.println(num);
+		}
+
 		LinkedList<Integer> intlinkedList = new LinkedList<Integer>();
 
 		for (int i = 0; i < 10; i++) {
