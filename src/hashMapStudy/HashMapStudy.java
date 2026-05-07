@@ -8,7 +8,7 @@ public class HashMapStudy {
 		System.out.println("Estudo de HashMap__!");
 
 //		Note que o HashMap não apresentará os dados na ordem, mas LinkedHashMap sim.
-//		O TreeMap vai já colocar os itens em ordem. Não armazenam dados duplicados.
+//		O TreeMap vai já colocar os itens em ordem alfabética da chave. Não armazenam dados duplicados.
 
 		TreeMap<String, String> dictionary = new TreeMap<String, String>();
 		dictionary.put("Brave", "Ready to face and endure danger");
