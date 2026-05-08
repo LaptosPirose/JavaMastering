@@ -9,6 +9,8 @@ public class AsRawType {
 		myList.add("hello");
 		myList.add(100);
 		myList.add(false);
+		
+		System.out.println(myList);
 
 		// Sem definição de tipo para cada item, você não consegue pegar
 		// o valor sem fazer parse.
@@ -20,9 +22,7 @@ public class AsRawType {
 		myVal = myList.get(0).toString();
 		System.out.println(myVal);
 
-		// Nesse modo, sem definir o tipo, não é possível simplesmente imprimir com
-		// sysout
-		// System.out.println(mylist);
+		System.out.println(myList);
 
 		ArrayList<Integer> integerList = new ArrayList<Integer>();
 		integerList.add(10);
