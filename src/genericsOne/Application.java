@@ -37,6 +37,7 @@ public class Application {
 
 		// employeesOne = accountantsOne; Not allowed even if is ArrayList of objects
 
+		// Now this is called wild cards
 		ArrayList<?> employeesTwo = new ArrayList<>();
 		ArrayList<String> accountantsTwo = new ArrayList<>();
 
